@@ -22,9 +22,14 @@ Relevant libraries and projects:
 
   * [JUNG](http://jung.sourceforge.net/)
     * [Maven repository](https://mvnrepository.com/artifact/net.sf.jung)
+    * https://github.com/jrtom/jung/releases/tag/jung-2.1
   * https://mindfusion.eu/java-diagram.html - commercial
   * https://scienceprog.com/free-fast-and-useful-java-based-circuit-simulator/
   * https://examples.javacodegeeks.com/desktop-java/swing/java-swing-drag-drop-example/
   * [ArgoUML](https://github.com/argouml-tigris-org/argouml) - Abandoned, but could be useful
   * https://giraph.apache.org/
+  * https://github.com/hausen/circuit-simulator - Derived from Faulstad, still don't have "rubber wires"
+  * [EDA software](https://en.wikipedia.org/wiki/Comparison_of_EDA_software)
+  * [XCircuit](https://github.com/RTimothyEdwards/xcircuit/)
+
 

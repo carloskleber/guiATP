@@ -1,0 +1,18 @@
+@startuml
+
+title guiATP - base classes
+
+skinparam componentStyle uml2
+
+class Case
+
+abstract class Node {
+  id
+}
+
+abstract class Component
+
+Case "1" -- "*" Component
+Component "1" -- "1..*" Node
+
+@enduml
