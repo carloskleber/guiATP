@@ -31,5 +31,9 @@ Relevant libraries and projects:
   * https://github.com/hausen/circuit-simulator - Derived from Faulstad, still don't have "rubber wires"
   * [EDA software](https://en.wikipedia.org/wiki/Comparison_of_EDA_software)
   * [XCircuit](https://github.com/RTimothyEdwards/xcircuit/)
-
+  * JavaScript examples
+    * https://ej2.syncfusion.com/demos/diagram/logic-circuit/
+    * https://github.com/projectstorm/react-diagrams
+      * http://projectstorm.cloud/react-diagrams/?path=%2Fstory%2Fsimple-usage--canvas-drag
+    * https://freegroup.github.io/draw2d/index.html#/api/draw2d
 

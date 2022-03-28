@@ -4,7 +4,9 @@ title guiATP - base classes
 
 skinparam componentStyle uml2
 
-class Case
+class Case {
+  generateATP()
+}
 
 abstract class Node {
   id
@@ -12,7 +14,10 @@ abstract class Node {
 
 abstract class Component
 
+class Port
+
 Case "1" -- "*" Component
-Component "1" -- "1..*" Node
+Component "1" -- "1..*" Port
+Port "1" -- "1" Node
 
 @enduml

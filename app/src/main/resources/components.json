@@ -1,0 +1,30 @@
+{
+  "components": [
+    {
+      "id": "Probe voltage",
+      "type": "probe",
+      "ports": 1
+    },
+    {
+      "id": "Resistor",
+      "type": "branch",
+      "ports": 2
+    },
+    {
+      "id": "AC Source",
+      "type": "source",
+      "ports": 1
+    },
+    {
+      "id": "Switch time controlled",
+      "type": "switch",
+      "ports": 2
+    },
+    {
+      "id": "Splitter",
+      "type": "threePhase",
+      "ports": 3,
+      "ports3": 1
+    }
+  ]
+}
