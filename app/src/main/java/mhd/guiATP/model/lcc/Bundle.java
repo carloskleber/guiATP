@@ -17,17 +17,62 @@ public class Bundle {
   private double separ;
   private double alpha;
   private double skin;
+  double resis;
+  int ix;
+  double react;
 
   public Bundle() {
-    ip = 1;
-    nc = 1;
-    diam = 0.;
-    horiz = 0.;
-    vtower = 0.;
-    vmid = 0.;
-    separ = 0.;
-    alpha = 0.;
-    skin = 0.5;
+    this.ip = 1;
+    this.nc = 1;
+    this.diam = 0.;
+    this.horiz = 0.;
+    this.vtower = 0.;
+    this.vmid = 0.;
+    this.separ = 0.;
+    this.alpha = 0.;
+    this.skin = 0.5;
+  }
+
+  public Bundle(int ip, double skin, double resis, int ix, double react, double diam, double horiz, double vtower, double vmid) {
+    this.ip = ip;
+    this.skin = skin;
+    this.resis = resis;
+    this.ix = ix;
+    this.react = react;
+    this.diam = diam;
+    this.horiz = horiz;
+    this.vtower = vtower;
+    this.vmid = vmid;
+  }
+
+  public Bundle(int ip, double skin, double resis, int ix, double react, double diam, double horiz, double vtower, double vmid, double separ, double alpha, int nc) {
+    this.ip = ip;
+    this.skin = skin;
+    this.resis = resis;
+    this.ix = ix;
+    this.react = react;
+    this.diam = diam;
+    this.horiz = horiz;
+    this.vtower = vtower;
+    this.vmid = vmid;
+    this.separ = separ;
+    this.alpha = alpha;
+    this.nc = nc;
+  }
+
+  /**
+   * Return the card (string for Line Constants entry)
+   *
+   * @return
+   */
+  public String getCard() {
+    String s;
+    if (nc == 1) {
+      s = String.format("%3d%5f%8f%2d%8%8f%8f%8f%8f\n", ip, skin, resis, ix, react, diam, horiz, vtower, vmid);
+    } else {
+      s = String.format("%3d%5f%8f%2d%8%8f%8f%8f%8f%8f%6f%2d\n", ip, skin, resis, ix, react, diam, horiz, vtower, vmid, separ, alpha, nc);
+    }
+    return s;
   }
 
   public double getVmid() {
